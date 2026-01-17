@@ -5,6 +5,7 @@
 #include "Traversal/postorder_traversal.h"
 #include "Traversal/pre_order_iterative.h"
 #include "Traversal/inorder_iterative.h"
+#include "Traversal/post_order_iterative.h"
 #include "node.h"
 using namespace std;
 
@@ -60,4 +61,6 @@ int main()
   preOrderIterative(root);
 
   inorderIterative(root);
+
+  postorderIterative(root);
 }
