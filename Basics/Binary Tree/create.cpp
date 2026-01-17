@@ -1,46 +1,7 @@
 #include <bits/stdc++.h>
+#include "Node.h"
+#include "Traversal/level_order_traversal.h"
 using namespace std;
-
-class Node
-{
-public:
-  int data;
-  Node *left;
-  Node *right;
-  Node(int data) : data(data), left(nullptr), right(nullptr) {};
-};
-
-void printTree(Node *root)
-{
-  queue<Node *> q;
-  q.push(root);
-
-  while (!q.empty())
-  {
-    int currSize = q.size();
-
-    while (currSize > 0)
-    {
-      Node *currNode = q.front();
-      cout << currNode->data << " , ";
-      q.pop();
-
-      // take the left node
-      if (currNode->left != nullptr)
-      {
-        q.push(currNode->left);
-      }
-
-      // take the right node
-      if (currNode->right != nullptr)
-      {
-        q.push(currNode->right);
-      }
-      currSize--;
-    }
-    cout << endl;
-  }
-}
 
 int main()
 {
@@ -76,5 +37,5 @@ int main()
     }
   }
 
-  printTree(root);
+  levelOrderTraversal(root);
 }
