@@ -11,11 +11,13 @@ void preOrderIterative(Node *root)
   if (!root)
   {
     cout << "Tree is empty" << endl;
+    return;
   }
 
   stack<Node *> st;
   st.push(root);
-  cout << "-----------------------------------" << endl;
+  cout << endl
+       << "-----------------------------------" << endl;
   cout << "Iterative PreOrder Traversal" << endl;
 
   while (!st.empty())
