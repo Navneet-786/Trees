@@ -2,6 +2,7 @@
 #include "Traversal/level_order_traversal.h"
 #include "Traversal/pre_order_traversal.h"
 #include "Traversal/inorder_traversal.h"
+#include "Traversal/postorder_traversal.h"
 #include "node.h"
 using namespace std;
 
@@ -42,10 +43,14 @@ int main()
   // level order trevsersl
   levelOrderTraversal(root);
   cout << endl;
-  cout << "oreOrder traversal : " << endl;
+  cout << "poreOrder traversal : " << endl;
   preOrderTraversal(root);
 
   cout << endl;
   cout << "Inorder traversal : " << endl;
   inorderTraversal(root);
+
+  cout << endl;
+  cout << "postorder traversal : " << endl;
+  postOrderTraversal(root);
 }
