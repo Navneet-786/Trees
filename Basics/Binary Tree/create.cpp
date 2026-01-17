@@ -1,6 +1,7 @@
-#include <bits/stdc++.h>
-#include "Node.h"
+
 #include "Traversal/level_order_traversal.h"
+#include "Traversal/pre_order_traversal.h"
+#include "node.h"
 using namespace std;
 
 int main()
@@ -37,5 +38,9 @@ int main()
     }
   }
 
+  // level order trevsersl
   levelOrderTraversal(root);
+
+  cout << "oreOrder traversal : " << endl;
+  preOrderTraversal(root);
 }

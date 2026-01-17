@@ -2,7 +2,7 @@
 #define LEVEL_ORDER_TRAVERSAL
 
 #include <bits/stdc++.h>
-#include "../Node.h"
+#include "../node.h"
 
 using namespace std;
 
